@@ -1,7 +1,7 @@
-// import React from "react";
+import React from "react";
 import {Route} from "react-router-dom";
-import {HomePage} from "./Components/pages/HomePage";
-import {LoginPage} from "./Components/pages/LoginPage";
+import HomePage from "./Components/pages/HomePage";
+import LoginPage from "./Components/pages/LoginPage";
 
 const App = () => <div>
 

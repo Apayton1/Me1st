@@ -2,10 +2,14 @@ import React from "react";
 
 
 
-const LoginPage = (props) => <div>
+const LoginPage = () => (
 
-  <h1>Login Page </h1>
+  <div>
 
-</div>
+    <h1>Login Page </h1>
 
-export default {LoginPage};
+  </div>
+
+
+);
+export default LoginPage;
