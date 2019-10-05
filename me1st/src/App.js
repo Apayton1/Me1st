@@ -3,7 +3,9 @@ import {Route} from "react-router-dom";
 import HomePage from "./Components/pages/HomePage";
 import LoginPage from "./Components/pages/LoginPage";
 
-const App = () => <div>
+const App = () => 
+
+<div className = "ui container">
 
   <Route path = "/" exact component = {HomePage}/>
   <Route path = "/login" exact component = {LoginPage}/>
