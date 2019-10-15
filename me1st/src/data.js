@@ -2,7 +2,7 @@ export const storeProducts = [
     {
         id:1,
         title: "Me1st T-Shirt - White",
-        img: "../public/images/placeholder.png",
+        img: "images/placeholder.png",
         price: 10,
         info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere iusto omnis. Nam sint quos tenetur nobis itaque iure placeat repudiandae minima eligendi similique temporibus, unde accusantium numquam delectus rem?",
         inCart: false,
@@ -12,7 +12,7 @@ export const storeProducts = [
     {
         id:2,
         title: "Me1st T-Shirt - White",
-        img: "./public/images/placeholder.png",
+        img: "images/placeholder.png",
         price: 10,
         info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere iusto omnis. Nam sint quos tenetur nobis itaque iure placeat repudiandae minima eligendi similique temporibus, unde accusantium numquam delectus rem?",
         inCart: false,
@@ -22,7 +22,7 @@ export const storeProducts = [
     {
         id:3,
         title: "Me1st T-Shirt - White",
-        img: "./public/images/placeholder.png",
+        img: "images/placeholder.png",
         price: 10,
         info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere iusto omnis. Nam sint quos tenetur nobis itaque iure placeat repudiandae minima eligendi similique temporibus, unde accusantium numquam delectus rem?",
         inCart: false,
