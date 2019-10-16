@@ -11,7 +11,9 @@
 body{
     font-family: 'Dosis', sans-serif !important;
     color: var(--darkBlue) !important;
-    background: var(--mainGreen) !important;
+    background: url(./img1.jpg) center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .text-title{

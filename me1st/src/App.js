@@ -10,6 +10,7 @@ import Default from "./components/Default";
 import Home from "./components/Home";
 import Blog from "./components/Blog";
 import Explore from "./components/Explore";
+import SocialFollow from "./components/SocialFollow";
 
 export default class App extends Component {
   render() {
@@ -17,6 +18,7 @@ export default class App extends Component {
 
       <React.Fragment>
         <Navbar />
+        
         <Switch>
           <Route exact path="/" component={Home}>
           </Route>
@@ -43,6 +45,8 @@ export default class App extends Component {
           </Route> */}
 
         </Switch>
+        
+        <SocialFollow/>
 
       </React.Fragment>
 

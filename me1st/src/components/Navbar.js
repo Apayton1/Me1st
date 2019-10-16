@@ -38,7 +38,7 @@ export default class Navbar extends Component {
                 </ul>
                 <Link to="/cart" className="ml-auto">
 
-                    <ButtonContainer>
+                    <ButtonContainer className = "btn">
                         <span className = "mr-2">
                         <i className="fas fa-cart-plus" />
                         </span>
@@ -52,11 +52,20 @@ export default class Navbar extends Component {
 }
 
 const NavWrapper = styled.nav `
-    background: var(--mainPink);
+    // background: var(--mainPink);
+    
     .nav-link{
         color:var(--darkBlue) !important;
         font-size: 1.3rem;
         text-transform: capitalize;
     }
+    .nav-link:hover{
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1) ;
+    }
+    Link:hover{
+        transition: all 1s linear
+    }
+  
 `
 
