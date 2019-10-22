@@ -16,11 +16,14 @@ export default class App extends Component {
   render() {
     return (
 
-      <React.Fragment>
+      <>
         <Navbar />
         
         <Switch>
           <Route exact path="/" component={Home}>
+          </Route>
+
+          <Route path="/explore" component={Explore}>
           </Route>
 
           <Route path="/shop" component={ProductList}>
@@ -32,23 +35,21 @@ export default class App extends Component {
           <Route path="/cart" component={Cart}>
           </Route>
 
-          <Route component={Default}>
-          </Route>
+          <Route path="/blog" component={Blog}/>
 
-          <Route path="/blog" component={Blog}>
-          </Route>
-
-          <Route path="/explore" component={Explore}>
-          </Route>
-
-          {/* <Route path="/" component={Landing}>
+           {/* <Route path="/" component={Landing}>
           </Route> */}
+    
+
+          <Route component = {Default}>
+          </Route>
+
 
         </Switch>
         
         <SocialFollow/>
 
-      </React.Fragment>
+      </>
 
     )
   }
