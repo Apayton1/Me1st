@@ -7,10 +7,11 @@ import ProductList from "./components/ProductList";
 import Details from "./components/Details";
 import Cart from "./components/Cart";
 import Default from "./components/Default";
+import Modal from "./components/Modal";
 import Home from "./components/Home";
 import Blog from "./components/Blog";
 import Explore from "./components/Explore";
-import SocialFollow from "./components/SocialFollow";
+// import SocialFollow from "./components/SocialFollow";
 
 export default class App extends Component {
   render() {
@@ -46,8 +47,9 @@ export default class App extends Component {
 
 
         </Switch>
+        <Modal/>
         
-        <SocialFollow/>
+        {/* <SocialFollow/> */}
 
       </>
 

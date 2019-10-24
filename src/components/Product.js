@@ -10,46 +10,57 @@ export default class Product extends Component {
         return (
             <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
                 <div className="card ">
-                    <div className="img-container p-5" onClick={() => console.log("you clicked me on the image container")}>
-                        <Link to="/details">
-                            <img src={img}
-                                alt="product"
-                                className="card-img-top" />
-                        </Link>
+                    <ProductConsumer>
+                        {(value) => (
+                            <div className="img-container p-5"
+                                onClick={() =>
+                                    // console.log("you clicked me on the image container")
+                                    value.handleDetail(id)
 
-                        <button
-                            className="card-btn"
-                            disable={inCart ? true : false}
-                            onClick={() => {
-                                console.log("added to the cart")
-                            }}>
+                                }>
+
+                                <Link to="/details">
+                                    <img src={img}
+                                        alt="product"
+                                        className="card-img-top" />
+                                </Link>
+
+                                <button
+                                    className="card-btn"
+                                    disable={inCart ? true : false}
+                                    onClick={() => {
+                                        // console.log("added to the cart")
+                                        value.addToCart(id);
+                                        value.openModal(id);
+                                    }}>
 
 
-                            {inCart ? (
-                                <p className="text-capitalize mb-0" aria-disabled = "true">
-                                    {""}
-                                    in Cart
+                                    {inCart ? (
+                                        <p className="text-capitalize mb-0" aria-disabled="true">
+                                            {""}
+                                            in Cart
                                     </p>
-                            ) : (
-                            <i className="fas fa-cart-plus" />
-                            )}
+                                    ) : (
+                                            <i className="fas fa-cart-plus" />
+                                        )}
 
-                        </button>
+                                </button>
 
-                    </div>
-
-                {/* Card Footer */}
-                <div className = "card-footer d-flex justify-content-between">
-                    <p className = "align-self-center mb-0"> 
-                    {/* must use the align self center class so that both items can be on the same
+                            </div>
+                        )}
+                    </ProductConsumer>
+                    {/* Card Footer */}
+                    <div className="card-footer d-flex justify-content-between">
+                        <p className="align-self-center mb-0">
+                            {/* must use the align self center class so that both items can be on the same
                      line despite the fact that the price is larger than the product */}
-                     {title}
-                    </p>
-                    <h5 className = " darkBlue font-italic mb-0">
-                        <span className = "mr-1">$</span>
-                        {price}
-                    </h5>
-                </div>
+                            {title}
+                        </p>
+                        <h5 className=" darkBlue font-italic mb-0">
+                            <span className="mr-1">$</span>
+                            {price}
+                        </h5>
+                    </div>
 
                 </div>
             </ProductWrapper>

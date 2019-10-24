@@ -15,32 +15,32 @@ export default function SocialFollow() {
         <FooterWrapper className=" navbar navbar-expand-sm px-sm-5 fixed-bottom navbar-light">
             <h2>Me1st
             <span>
-                    <i class="far fa-copyright"></i>
+                    <i className="far fa-copyright"></i>
                 </span>
             </h2>
             <h3>Social Follow</h3>
             <a href=""
                 className="youtube social navbar-brand">
 
-                <FontAwesomeIcon icon={faYoutube} size="2px" />
+                <FontAwesomeIcon icon={faYoutube} size="1x" />
 
             </a>
             <a href=""
                 className="facebook social navbar-brand">
 
-                <FontAwesomeIcon icon={faFacebook} size="2px" />
+                <FontAwesomeIcon icon={faFacebook} size="1x" />
 
             </a>
             <a href=""
                 className="instagram social navbar-brand">
 
-                <FontAwesomeIcon icon={faInstagram} size="2px" />
+                <FontAwesomeIcon icon={faInstagram} size="1x" />
 
             </a>
             <a href=""
                 className="twitter social navbar-brand">
 
-                <FontAwesomeIcon icon={faTwitter} size="2px" />
+                <FontAwesomeIcon icon={faTwitter} size="1x" />
 
             </a>
 
