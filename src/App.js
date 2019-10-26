@@ -24,19 +24,19 @@ export default class App extends Component {
           <Route exact path="/" component={Home}>
           </Route>
 
-          <Route path="/explore" component={Explore}>
+          <Route exact path="/explore" component={Explore}>
           </Route>
 
-          <Route path="/shop" component={ProductList}>
+          <Route exact path="/shop" component={ProductList}>
           </Route>
 
-          <Route path="/details" component={Details}>
+          <Route exact path="/details" component={Details}>
           </Route>
 
-          <Route path="/cart" component={Cart}>
+          <Route exact path="/cart" component={Cart}>
           </Route>
 
-          <Route path="/blog" component={Blog}/>
+          <Route exact path="/blog" component={Blog}/>
 
            {/* <Route path="/" component={Landing}>
           </Route> */}
