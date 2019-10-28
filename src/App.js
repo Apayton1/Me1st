@@ -11,6 +11,7 @@ import Modal from "./components/Modal";
 import Home from "./components/Home";
 import Blog from "./components/Blog";
 import Explore from "./components/Explore";
+import Forum from "./components/DiscussionForum/Forum";
 // import SocialFollow from "./components/SocialFollow";
 
 export default class App extends Component {
@@ -36,7 +37,8 @@ export default class App extends Component {
           <Route exact path="/cart" component={Cart}>
           </Route>
 
-          <Route exact path="/blog" component={Blog}/>
+          <Route exact path="/blog" component={Forum}/>
+          
 
            {/* <Route path="/" component={Landing}>
           </Route> */}

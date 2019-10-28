@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { storeProducts, detailProduct } from "./data";
+import { storeProducts, detailProduct, forumPosts } from "./data";
 
 const ProductContext = React.createContext();
 // Context can be named anything you want, I chose ProductContext. Context comes with two components:
@@ -15,7 +15,9 @@ class ProductProvider extends Component {
         modalProduct: detailProduct,
         cartSubTotal: 0,
         cartTax: 0,
-        cartTotal: 0
+        cartTotal: 0,
+        posts:forumPosts,
+        newPost:""
     };
     componentDidMount() {
         this.setProducts();
@@ -166,6 +168,15 @@ class ProductProvider extends Component {
         })
     }
 
+    // addPost = () => {
+    //     this.setState(() => {
+    //         return {newPost: }
+    //     })
+        
+    //     console.log("Post Added");
+    // }
+
+
 
     render() {
         return (
@@ -178,7 +189,8 @@ class ProductProvider extends Component {
                 increment: this.increment,
                 decrement: this.decrement,
                 removeItem: this.removeItem,
-                clearCart: this.clearCart
+                clearCart: this.clearCart,
+                addPost: this.addPost
 
                 //    products: this.state.product - could also use
             }}>
