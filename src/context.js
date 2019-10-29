@@ -16,8 +16,7 @@ class ProductProvider extends Component {
         cartSubTotal: 0,
         cartTax: 0,
         cartTotal: 0,
-        posts:forumPosts,
-        newPost:""
+        posts:[],
     };
     componentDidMount() {
         this.setProducts();
@@ -168,17 +167,18 @@ class ProductProvider extends Component {
         })
     }
 
-    // addPost = () => {
-    //     this.setState(() => {
-    //         return {newPost: }
-    //     })
+    addPost = (newPost) => {
+        this.setState(prev => ({
+            posts: [...prev.posts, newPost]
+        }))
         
-    //     console.log("Post Added");
-    // }
+        // console.log("Post Added");
+    }
 
 
 
     render() {
+        console.log(1,this.state.posts);
         return (
             <ProductContext.Provider value={{
                 ...this.state,

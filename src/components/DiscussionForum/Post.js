@@ -8,15 +8,11 @@ export default class Post extends Component {
 
             <div className="panel panel-default post-input">
                 <div className="panel-body">
-                    Hello I am a post
+                    {this.props.post}
                     </div>
             </div>
 
         )
     }
 }
-Post.propTypes = {
-    post: PropTypes.shape({
-        id: PropTypes.number
-    }).isRequired
-};
+
