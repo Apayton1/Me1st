@@ -6,16 +6,21 @@ import App from './App';
 // import "bootstrap/dist/css/bootstrap.min.css";
 import './index.css';
 import { BrowserRouter as Router } from "react-router-dom";
-import { ProductProvider } from "./context";
+// import { ProductProvider } from "./context";
 import * as serviceWorker from './serviceWorker';
- 
+// import { ProductProvider } from './context';
 
+
+;
 ReactDOM.render(
-    <ProductProvider>
+
+    <>
+        
         <Router>
             <App />
         </Router>
-    </ProductProvider>,
+    </>
+    ,
     document.getElementById('root')
 );
 

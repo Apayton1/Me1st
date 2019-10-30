@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { storeProducts, detailProduct, forumPosts } from "./data";
+import { storeProducts, detailProduct } from "./data";
+// import { storeProducts, detailProduct, forumPosts } from "./data";
 
 const ProductContext = React.createContext();
 // Context can be named anything you want, I chose ProductContext. Context comes with two components:
@@ -18,6 +19,7 @@ class ProductProvider extends Component {
         cartTotal: 0,
         posts:[],
     };
+    
     componentDidMount() {
         this.setProducts();
     }
@@ -155,7 +157,7 @@ class ProductProvider extends Component {
     addTotals = () => {
         let subTotal = 0;
         this.state.cart.map(item => (subTotal += item.total));
-        const tempTax = subTotal * 0.1;
+        const tempTax = subTotal * 0.2;
         const tax = parseFloat(tempTax.toFixed(2));
         const total = subTotal + tax;
         this.setState(() => {
@@ -174,6 +176,7 @@ class ProductProvider extends Component {
         
         // console.log("Post Added");
     }
+ 
 
 
 

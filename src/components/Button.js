@@ -7,7 +7,7 @@ text-transform:capitalize;
 font-size:1rem;
 color: var(--mainGreen) !important;
 background: transparent;
-border: 0.5rem solid white;
+border: 0.2rem solid white;
 border-color: var(--mainPurple);
 padding: 0.2rem 0.5rem;
 cursor: pointer;

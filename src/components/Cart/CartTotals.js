@@ -13,23 +13,23 @@ export default function CartTotals({value, history}) {
                         <button className = "btn btn-outline-danger text-uppercase mb-3 px-5"
                         type = "button"
                         onClick = {() => clearCart()}> 
-                        clear cart
+                        <strong>clear cart</strong>
                         </button>
                     </Link>
                     <h5>
-                        <span className = "text-title">
+                        <span className = "text-title textColor">
                             SubTotal : </span>
-                            <strong>$ {cartSubTotal}</strong>
+                            <strong className = "textColor">$ {cartSubTotal}</strong>
                     </h5>
                     <h5>
-                        <span className = "text-title">
+                        <span className = "text-title textColor">
                             Tax : </span>
-                            <strong>$ {cartTax}</strong>
+                            <strong className = "textColor">$ {cartTax}</strong>
                     </h5>
                     <h5>
-                        <span className = "text-title">
+                        <span className = "text-title textColor">
                             Total : </span>
-                            <strong>$ {cartTotal}</strong>
+                            <strong className = "textColor">$ {cartTotal}</strong>
                     </h5>
                     <PayPalButton 
                     total = {cartTotal} 

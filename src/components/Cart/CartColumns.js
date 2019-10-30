@@ -20,7 +20,7 @@ export default function CartColumns() {
                     <p className = "text-uppercase">remove</p>
                 </div>
                 <div className = "col-10 mx-auto col-lg-2">
-                    <p className = "text-uppercase">total</p>
+                    <p className = "text-uppercase textColor">total</p>
                 </div>
             </div>
         </div>

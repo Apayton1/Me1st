@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import logo from "../image (2)..png";
 import styled from "styled-components";
-import {ButtonContainer} from "./Button";
+import { ButtonContainer } from "./Button";
+// import app from '../base';
+// import { AuthProvider } from '../Auth';
 
 export default class Navbar extends Component {
     render() {
@@ -24,11 +26,11 @@ export default class Navbar extends Component {
                         </Link>
                     </li>
 
-                    <li>
+                    {/* <li>
                         <Link to="/explore" className="nav-link">
                             Explore
                         </Link>
-                    </li>
+                    </li> */}
 
                     <li>
                         <Link to="/shop" className="nav-link">
@@ -36,22 +38,29 @@ export default class Navbar extends Component {
                         </Link>
                     </li>
                 </ul>
+                
                 <Link to="/cart" className="ml-auto">
 
-                    <ButtonContainer className = "btn">
-                        <span className = "mr-2">
-                        <i className="fas fa-cart-plus" />
+                    <ButtonContainer className="btn">
+                        <span className="mr-2">
+                            <i className="fas fa-cart-plus" />
                         </span>
                         Shopping Cart
                     </ButtonContainer>
 
                 </Link>
+                {/* <ButtonContainer
+                    className="btn ml-auto"
+                    onClick={() => app.auth().signOut()}>
+                    Log Out
+                </ButtonContainer>
+                 */}
             </NavWrapper>
         )
     }
 }
 
-const NavWrapper = styled.nav `
+const NavWrapper = styled.nav`
     // background: var(--mainPink);
     
     .nav-link{
