@@ -41,7 +41,7 @@ export default class Home extends Component {
                     <div className = "container center">
                        
                        <div className = "row">
-                       <h2>THE PURPOSE OF THE ME1ST MOVEMENT IS TO BUILD THE ME1ST MOVEMENT, WHICH PROMOTES A CIRCULATION OF SUPPORT, KNOWLEDGE, AND ENCOURAGEMENT IN CARING FOR ONESELF.</h2>
+                       <h2>THE PURPOSE OF THE ME1ST MOVEMENT IS TO PROMOTE A CIRCULATION OF SUPPORT, KNOWLEDGE, AND ENCOURAGEMENT IN CARING FOR ONESELF.</h2>
                        </div>
                     </div>
                 </div>
